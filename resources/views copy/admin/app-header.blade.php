@@ -358,23 +358,9 @@
                                     <a class="dropdown-item" href="lockscreen.html">
                                         <i class="dropdown-icon fe fe-lock"></i> Lockscreen
                                     </a>
-                                    <form method="POST" action="{{ route('logout') }}" class="dropdown-item">
-                                        @csrf
-                                        <a class="" href="route('logout')" onclick="event.preventDefault(); this.closest('form').submit();">
-                                            <i class="dropdown-icon fe fe-alert-circle"></i> {{ __('Log Out') }}
-                                        </a>
-                                    </form>
-                                </div>
-                                <div class="d-none">
-                                <form method="POST" action="{{ route('logout') }}">
-                                    @csrf
-
-                                    <x-dropdown-link :href="route('logout')"
-                                            onclick="event.preventDefault();
-                                                        this.closest('form').submit();">
-                                        {{ __('Log Out') }}
-                                    </x-dropdown-link>
-                                </form>
+                                    <a class="dropdown-item" href="login.html">
+                                        <i class="dropdown-icon fe fe-alert-circle"></i> Sign out
+                                    </a>
                                 </div>
                             </div>
                         </div>

@@ -15,21 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-// Route::get('/dashboard', function () {
-//     return view('dashboard');
-// })->middleware(['auth'])->name('dashboard');
-
 Route::get('/', [WebsiteHomeController::class, 'index'])->name('website.home');
 
 Route::prefix('admin')->group(function () {
-    Route::get('/', [HomeController::class, 'index'])->middleware(['auth'])->name('admin.home');
-    Route::get('home', [HomeController::class, 'index'])->middleware(['auth'])->name('admin.home');
+    Route::get('/', [HomeController::class, 'index'])->name('admin.home');
+    Route::get('home', [HomeController::class, 'index'])->name('admin.home');
 });
-
-require __DIR__.'/auth.php';
-
-
