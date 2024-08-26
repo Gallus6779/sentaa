@@ -1,7 +1,5 @@
 <?php
 
-use App\Http\Controllers\Admin\HomeController;
-use App\Http\Controllers\Website\HomeController as WebsiteHomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -31,5 +30,3 @@ Route::prefix('admin')->group(function () {
 });
 
 require __DIR__.'/auth.php';
-
-
