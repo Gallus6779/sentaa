@@ -25,11 +25,11 @@ class User extends Authenticatable
         'phone',
         'localization_id',
         'sex',
-        'year_old',
-        'date_born',
+        'age',
+        'borned_at',
         'picture',
         'username',
-        'actve_state_yn',
+        'actve_yn',
     ];
 
     /**

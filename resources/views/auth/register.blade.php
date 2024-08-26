@@ -42,8 +42,8 @@
                                 <form method="POST" action="{{ route('register') }}" class="signin-form">
                                     @csrf
                                     <div class="form-group mb-3">
-                                        <label class="label" for="name">{{ __('Name') }}</label>
-                                        <input id="name" type="text" class="form-control" placeholder="Name" name="name" value="{{ old('name') }}" required autofocus>
+                                        <label class="label" for="fname">{{ __('Name') }}</label>
+                                        <input id="fname" type="text" class="form-control" placeholder="Name" name="fname" value="{{ old('fname') }}" required autofocus>
                                     </div>
                                     <div class="form-group mb-3">
                                         <label class="label" for="name">{{ __('Email') }}</label>
